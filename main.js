@@ -3,7 +3,7 @@ const app = express()
 const path = require('path')
 const hbs = require('hbs')
 
-const port = process.env.port || 3000
+const port = process.env.PORT || 8000
 
 const staticPath = path.join(__dirname, '/public')
 console.log(path.join(__dirname, '/views'))
