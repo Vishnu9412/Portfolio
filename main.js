@@ -6,10 +6,17 @@ const hbs = require('hbs')
 const port = process.env.PORT || 8000
 
 const staticPath = path.join(__dirname, '/public')
-console.log(path.join(__dirname, '/views'))
-app.set('views', path.join(__dirname, '/views'))
+const templatePath = path.join(__dirname, '/templates/views')
+const partialsPath = path.join(__dirname, '/templates/partials')
+
+
+
+app.set('views', templatePath)
 app.set('view engine', 'hbs')
 app.use(express.static(staticPath))
+
+
+hbs.registerPartials(partialsPath)
 
 app.get('/', (req, res) => {
     res.render('index')

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Goswami</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/7f1332f97e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="scss/index.css">
+</head>
+
+<body>
+    {{>loading}}
+
+    <div style="overflow-x:hidden;position:relative">
+        {{!-- HEADER --}}
+        <header>
+            <div class="heading-logos header-section-1">
+                <div class="svg-logo">
+                    <svg width="80" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="47" cy="47" r="47" fill="#0B0B0B" />
+                        <path
+                            d="M35.8273 67.417L16.3006 26.2168L16.482 26.2168C23.7365 26.2167 25.3687 26.7309 27.7869 30.009L35.8273 46.9776C36.3311 45.735 37.8343 42.2084 39.8172 38.0434C41.8001 33.8784 44.4722 31.2945 45.5604 30.5232C50.5902 26.9753 55.0718 26.2597 56.6839 26.3454H70.3466C70.0564 33.5956 65.1878 35.4938 62.7898 35.5367H55.9585C52.8149 35.0225 49.8123 38.3219 48.704 40.0359L35.8273 67.417Z"
+                            fill="white" stroke="#2E2E2E" />
+                        <ellipse cx="48.0389" cy="62.0822" rx="4.77587" ry="5.07772" fill="white" />
+                        <path
+                            d="M70.3466 62.1464V42.3497H64.7848H60.553C54.5076 42.9282 52.9358 49.3342 52.9962 51.6053H61.7016V57.9042C60.9762 64.5888 57.7721 67.1598 56.2607 67.6097C62.8382 68.0725 68.3919 64.1603 70.3466 62.1464Z"
+                            fill="white" stroke="#2E2E2E" />
+                    </svg>
+                </div>
+                <div class="text-logo">
+                    <svg width="150" height="70" viewBox="0 0 224 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M91.9559 1.12L81.4359 29H77.2359L66.7159 1.12H70.5959L79.3559 25.16L88.1159 1.12H91.9559ZM102.987 1.12V29H99.3472V1.12H102.987ZM121.431 29.28C119.591 29.28 117.938 28.96 116.471 28.32C115.031 27.6533 113.898 26.7467 113.071 25.6C112.244 24.4267 111.818 23.08 111.791 21.56H115.671C115.804 22.8667 116.338 23.9733 117.271 24.88C118.231 25.76 119.618 26.2 121.431 26.2C123.164 26.2 124.524 25.7733 125.511 24.92C126.524 24.04 127.031 22.92 127.031 21.56C127.031 20.4933 126.738 19.6267 126.151 18.96C125.564 18.2933 124.831 17.7867 123.951 17.44C123.071 17.0933 121.884 16.72 120.391 16.32C118.551 15.84 117.071 15.36 115.951 14.88C114.858 14.4 113.911 13.6533 113.111 12.64C112.338 11.6 111.951 10.2133 111.951 8.48C111.951 6.96 112.338 5.61333 113.111 4.44C113.884 3.26666 114.964 2.36 116.351 1.72C117.764 1.08 119.378 0.759999 121.191 0.759999C123.804 0.759999 125.938 1.41333 127.591 2.72C129.271 4.02667 130.218 5.76 130.431 7.92H126.431C126.298 6.85333 125.738 5.92 124.751 5.12C123.764 4.29333 122.458 3.88 120.831 3.88C119.311 3.88 118.071 4.28 117.111 5.08C116.151 5.85333 115.671 6.94667 115.671 8.36C115.671 9.37333 115.951 10.2 116.511 10.84C117.098 11.48 117.804 11.9733 118.631 12.32C119.484 12.64 120.671 13.0133 122.191 13.44C124.031 13.9467 125.511 14.4533 126.631 14.96C127.751 15.44 128.711 16.2 129.511 17.24C130.311 18.2533 130.711 19.64 130.711 21.4C130.711 22.76 130.351 24.04 129.631 25.24C128.911 26.44 127.844 27.4133 126.431 28.16C125.018 28.9067 123.351 29.28 121.431 29.28ZM160.947 1.12V29H157.307V16.36H143.107V29H139.467V1.12H143.107V13.36H157.307V1.12H160.947ZM192.483 29H188.843L174.203 6.8V29H170.563V1.08H174.203L188.843 23.24V1.08H192.483V29ZM205.648 1.12V18.76C205.648 21.24 206.248 23.08 207.448 24.28C208.674 25.48 210.368 26.08 212.528 26.08C214.661 26.08 216.328 25.48 217.528 24.28C218.754 23.08 219.368 21.24 219.368 18.76V1.12H223.008V18.72C223.008 21.04 222.541 23 221.608 24.6C220.674 26.1733 219.408 27.3467 217.808 28.12C216.234 28.8933 214.461 29.28 212.488 29.28C210.514 29.28 208.728 28.8933 207.128 28.12C205.554 27.3467 204.301 26.1733 203.368 24.6C202.461 23 202.008 21.04 202.008 18.72V1.12H205.648ZM20.1184 49.8C19.6118 48.8667 18.8784 48.16 17.9184 47.68C16.9851 47.1733 15.8784 46.92 14.5984 46.92C12.3851 46.92 10.6118 47.6533 9.27844 49.12C7.94511 50.56 7.27844 52.4933 7.27844 54.92C7.27844 57.5067 7.97178 59.5333 9.35844 61C10.7718 62.44 12.7051 63.16 15.1584 63.16C16.8384 63.16 18.2518 62.7333 19.3984 61.88C20.5718 61.0267 21.4251 59.8 21.9584 58.2H13.2784V53.16H28.1584V59.52C27.6518 61.2267 26.7851 62.8133 25.5584 64.28C24.3584 65.7467 22.8251 66.9333 20.9584 67.84C19.0918 68.7467 16.9851 69.2 14.6384 69.2C11.8651 69.2 9.38511 68.6 7.19844 67.4C5.03844 66.1733 3.34511 64.48 2.11844 62.32C0.918444 60.16 0.318444 57.6933 0.318444 54.92C0.318444 52.1467 0.918444 49.68 2.11844 47.52C3.34511 45.3333 5.03844 43.64 7.19844 42.44C9.35844 41.2133 11.8251 40.6 14.5984 40.6C17.9584 40.6 20.7851 41.4133 23.0784 43.04C25.3984 44.6667 26.9318 46.92 27.6784 49.8H20.1184ZM48.6272 69.28C45.9872 69.28 43.5605 68.6667 41.3472 67.44C39.1605 66.2133 37.4139 64.5067 36.1072 62.32C34.8272 60.1067 34.1872 57.6267 34.1872 54.88C34.1872 52.1333 34.8272 49.6667 36.1072 47.48C37.4139 45.2933 39.1605 43.5867 41.3472 42.36C43.5605 41.1333 45.9872 40.52 48.6272 40.52C51.2672 40.52 53.6805 41.1333 55.8672 42.36C58.0805 43.5867 59.8139 45.2933 61.0672 47.48C62.3472 49.6667 62.9872 52.1333 62.9872 54.88C62.9872 57.6267 62.3472 60.1067 61.0672 62.32C59.7872 64.5067 58.0539 66.2133 55.8672 67.44C53.6805 68.6667 51.2672 69.28 48.6272 69.28ZM48.6272 63.04C50.8672 63.04 52.6539 62.2933 53.9872 60.8C55.3472 59.3067 56.0272 57.3333 56.0272 54.88C56.0272 52.4 55.3472 50.4267 53.9872 48.96C52.6539 47.4667 50.8672 46.72 48.6272 46.72C46.3605 46.72 44.5472 47.4533 43.1872 48.92C41.8539 50.3867 41.1872 52.3733 41.1872 54.88C41.1872 57.36 41.8539 59.3467 43.1872 60.84C44.5472 62.3067 46.3605 63.04 48.6272 63.04ZM80.3525 69.28C78.2992 69.28 76.4592 68.9467 74.8325 68.28C73.2058 67.6133 71.8992 66.6267 70.9125 65.32C69.9525 64.0133 69.4458 62.44 69.3925 60.6H76.6725C76.7792 61.64 77.1392 62.44 77.7525 63C78.3658 63.5333 79.1658 63.8 80.1525 63.8C81.1658 63.8 81.9658 63.5733 82.5525 63.12C83.1392 62.64 83.4325 61.9867 83.4325 61.16C83.4325 60.4667 83.1925 59.8933 82.7125 59.44C82.2592 58.9867 81.6858 58.6133 80.9925 58.32C80.3258 58.0267 79.3658 57.6933 78.1125 57.32C76.2992 56.76 74.8192 56.2 73.6725 55.64C72.5258 55.08 71.5392 54.2533 70.7125 53.16C69.8858 52.0667 69.4725 50.64 69.4725 48.88C69.4725 46.2667 70.4192 44.2267 72.3125 42.76C74.2058 41.2667 76.6725 40.52 79.7125 40.52C82.8058 40.52 85.2992 41.2667 87.1925 42.76C89.0858 44.2267 90.0992 46.28 90.2325 48.92H82.8325C82.7792 48.0133 82.4458 47.3067 81.8325 46.8C81.2192 46.2667 80.4325 46 79.4725 46C78.6458 46 77.9792 46.2267 77.4725 46.68C76.9658 47.1067 76.7125 47.7333 76.7125 48.56C76.7125 49.4667 77.1392 50.1733 77.9925 50.68C78.8458 51.1867 80.1792 51.7333 81.9925 52.32C83.8058 52.9333 85.2725 53.52 86.3925 54.08C87.5392 54.64 88.5258 55.4533 89.3525 56.52C90.1792 57.5867 90.5925 58.96 90.5925 60.64C90.5925 62.24 90.1792 63.6933 89.3525 65C88.5525 66.3067 87.3792 67.3467 85.8325 68.12C84.2858 68.8933 82.4592 69.28 80.3525 69.28ZM136.842 40.92L129.522 69H121.242L116.762 50.52L112.122 69H103.842L96.7219 40.92H104.042L108.082 61.36L113.082 40.92H120.602L125.402 61.36L129.482 40.92H136.842ZM161.152 64.04H150.672L148.992 69H141.832L151.992 40.92H159.912L170.072 69H162.832L161.152 64.04ZM159.392 58.76L155.912 48.48L152.472 58.76H159.392ZM208.364 40.92V69H201.524V52.16L195.244 69H189.724L183.404 52.12V69H176.564V40.92H184.644L192.524 60.36L200.324 40.92H208.364ZM223.523 40.92V69H216.683V40.92H223.523Z"
+                            fill="#FF2B51" />
+                    </svg>
+
+                </div>
+            </div>
+            <div class="header-section-2">
+                <div class="header-img">
+                    <img src="images/main-img.png" alt="">
+                </div>
+                <div class="header-links">
+                    <ul>
+                        <li> <a href=""> Home</a></li>
+                        <li><a href=""> About</a></li>
+                        <li><a href=""> projects</a></li>
+                        <li><a href=""> Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header-section-3">
+                <div class="FSD-text">
+                    <p>Full Stack Developer</p>
+                    <p> <span> From </span> IN</p>
+                </div>
+                <div class="header-social-links">
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-google"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+        </header>
+        {{!-- ================================== --}}
+
+
+        <div class="wave-after-header">
+            <img src="images/wave.png" alt="">
+        </div>
+
+        {{!-- EXPERIENCES --}}
+        <div class="experiences">
+            <div class="experiences-section-1">
+                <h1>Trusted with Variety <br> of more <span> Experiences</span></h1>
+                <p>RECORDS</p>
+                <p>With more than 2 years of experience focused on design, I have a lot of expertise and have been trusted by more than 10 Companies</p>
+            </div>
+            <div class="experiences-section-2">
+                <div>
+                    <div class="experiences-quality">
+                        <p><span> 2+</span> Years</p>
+                        <p>Experience</p>
+                    </div>
+                    <div class="experiences-quality">
+                        <p><span> 10+</span> Brands</p>
+                        <p>Cooperation with me</p>
+                    </div>
+                </div>
+                <div class="experiences-quality">
+                    <p><span> 5+</span> Projects</p>
+                    <p>Well Done</p>
+                </div>
+            </div>
+        </div>
+
+        {{!-- ============================= --}}
+
+        <div class="wave-after-experiences">
+            <img src="images/wave 2.png" alt="">
+        </div>
+
+        <div class="services">
+            <div class="services-section-1">
+                <h1> <span> Services</span> that I offers</span>
+                </h1>
+                <p>I offer a variaty of services to help you to grow and build your brand and help you with developing your Products
+                </p>
+            </div>
+            <div class="services-section-2">
+                <div>
+                    <div class="all-services">
+                        <p>
+                            <span>Front End</span>
+                            <span> Developement</span>
+                        </p>
+                        <a href="">View On Fiverr&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                    <div class="all-services">
+                        <p><span> Template</span> Designer</p>
+                        <a href="">View On Fiverr&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                <div class="all-services">
+                    <p><span> Back End</span>
+                        <span> Developement</span>
+                    </p>
+                    <a href="">View On Fiverr&nbsp;&nbsp;<i class="fa-solid fa-arrow-right-long"></i></a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qt2e9yuDBJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qt2e9yuDBJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qt2e9yuDBJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qt2e9yuDBJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Qt2e9yuDBJA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/loading/loading.js"></script>
+</body>
+
+</html>
