@@ -189,7 +189,7 @@ header .header-section-3 .header-social-links i:hover {
 
 .experiences .experiences-section-1 p:nth-child(2) {
   color: var(--theme-color);
-  font-size: calc(5px + 1vw);
+  font-size: calc(10px + 1vw);
 }
 
 .experiences .experiences-section-1 p:nth-child(3) {
@@ -225,6 +225,7 @@ header .header-section-3 .header-social-links i:hover {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 20em;
+  margin-bottom: 10em;
 }
 
 .services .services-section-1 h1 {
