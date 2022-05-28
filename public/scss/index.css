@@ -336,6 +336,7 @@ header .header-section-3 .header-social-links i:hover {
         justify-content: space-around;
     margin: 0%;
     border-radius: 1em 1em 0 0;
+    z-index: 999;
     -webkit-box-shadow: var(--theme-color) 0px 5px 15px;
             box-shadow: var(--theme-color) 0px 5px 15px;
   }

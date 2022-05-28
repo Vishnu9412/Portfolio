@@ -266,6 +266,7 @@ header {
         justify-content: space-around;
         margin: 0%;
         border-radius: 1em 1em 0 0;
+        z-index: 999;
         box-shadow: var(--theme-color) 0px 5px 15px;
         li {
             transform: rotate(0deg)!important;
