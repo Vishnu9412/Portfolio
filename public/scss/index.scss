@@ -88,7 +88,7 @@ header {
     }
     .header-section-3 {
         position: absolute;
-        bottom: 10vh;
+        bottom: 0%;
         display: flex;
         justify-content: space-between;
         width: 100%;
@@ -260,6 +260,9 @@ header {
 @media screen and (max-width:750px) {
     body>div {
         padding: 1em;
+    }
+    .header-section-3 {
+        bottom: 12vh!important;
     }
     .header-links ul {
         bottom: 0%!important;
