@@ -76,7 +76,7 @@ header .header-section-2 .header-img img {
 header .header-section-2 .header-links ul {
   position: fixed;
   right: 0;
-  bottom: 35%;
+  bottom: 5vh;
 }
 
 header .header-section-2 .header-links ul li {
