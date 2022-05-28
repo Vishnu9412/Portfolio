@@ -17,6 +17,10 @@ html {
 body {
   background-color: black;
   margin: 0;
+  padding: 0em;
+}
+
+body > div {
   padding: 3em;
 }
 
@@ -321,7 +325,7 @@ header .header-section-3 .header-social-links i:hover {
 }
 
 @media screen and (max-width: 750px) {
-  body {
+  body > div {
     padding: 1em;
   }
   .header-links ul {
@@ -329,7 +333,7 @@ header .header-section-3 .header-social-links i:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 96vw;
+    width: 100vw;
     background-color: #0B0B0B;
     padding: 1em 0 1em 0;
     -ms-flex-pack: distribute;
