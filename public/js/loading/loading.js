@@ -1,7 +1,7 @@
 document.onreadystatechange = function() {
     if (document.readyState !== "complete") {
+        setTimeout(fade, 1500);
         $('.loading-box').addClass('gone');
-        setTimeout(fade, 900);
 
         function fade() {
             $('.loading-box').fadeOut();
