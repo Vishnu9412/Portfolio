@@ -21,6 +21,9 @@ hbs.registerPartials(partialsPath)
 app.get('/', (req, res) => {
     res.render('index')
 })
+app.get('/projects', (req, res) => {
+    res.render('projects')
+})
 
 app.listen(port, () => {
     console.log(`http://localhost:${port}/`)

@@ -10,18 +10,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <script src="https://kit.fontawesome.com/7f1332f97e.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="scss/index.css">
+    <link rel="stylesheet" href="scss/index/index.css">
 </head>
 
 <body>
     {{>loading}}
+    <video autoplay loop muted id="backgroundVideo">
+        <source src="videos/backgroundVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
 
     <div style="overflow-x:hidden;position:relative">
-        {{!-- HEADER --}}
+        <!-- {{!-- HEADER --}} -->
         <header>
             <div class="heading-logos header-section-1">
                 <div class="svg-logo">
-                    <svg width="80" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="/">
+                        <svg width="80" height="94" viewBox="0 0 94 94" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="47" cy="47" r="47" fill="#0B0B0B" />
                         <path
                             d="M35.8273 67.417L16.3006 26.2168L16.482 26.2168C23.7365 26.2167 25.3687 26.7309 27.7869 30.009L35.8273 46.9776C36.3311 45.735 37.8343 42.2084 39.8172 38.0434C41.8001 33.8784 44.4722 31.2945 45.5604 30.5232C50.5902 26.9753 55.0718 26.2597 56.6839 26.3454H70.3466C70.0564 33.5956 65.1878 35.4938 62.7898 35.5367H55.9585C52.8149 35.0225 49.8123 38.3219 48.704 40.0359L35.8273 67.417Z"
@@ -31,6 +36,7 @@
                             d="M70.3466 62.1464V42.3497H64.7848H60.553C54.5076 42.9282 52.9358 49.3342 52.9962 51.6053H61.7016V57.9042C60.9762 64.5888 57.7721 67.1598 56.2607 67.6097C62.8382 68.0725 68.3919 64.1603 70.3466 62.1464Z"
                             fill="white" stroke="#2E2E2E" />
                     </svg>
+                    </a>
                 </div>
                 <div class="text-logo">
                     <svg width="150" height="70" viewBox="0 0 224 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -47,9 +53,9 @@
                 </div>
                 <div class="header-links">
                     <ul>
-                        <li> <a href=""> Home</a></li>
-                        <li><a href=""> About</a></li>
-                        <li><a href=""> projects</a></li>
+                        <li> <a href="/"> Home</a></li>
+                        <!-- <li><a href=""> About</a></li> -->
+                        <li><a href="/projects"> projects</a></li>
                         <li><a href=""> Contact</a></li>
                     </ul>
                 </div>
@@ -67,7 +73,9 @@
                 </div>
             </div>
         </header>
-        {{!-- ================================== --}}
+        <!-- {{!-- ================================== --}} -->
+
+
 
 
         <div class="wave-after-header">
@@ -100,6 +108,8 @@
         </div>
 
         {{!-- ============================= --}}
+
+
 
         <div class="wave-after-experiences">
             <img src="images/wave 2.png" alt="">
@@ -135,7 +145,15 @@
                 </div>
             </div>
         </div>
-
+        <div class="about-me-section">
+            <h1> <span> Something</span> About Me</h1>
+            <p>Hey myself Vishnu Goswami. <br> I'm a professional web developer with more than 2 years of experience. I have been developing websites for various types of clients and industries. I'm passionate about design, programming and anything related
+                to the web. I enjoy working in a team and always try to deliver a product that exceeds expectations. <br> So why are you waiting? Just send me a message and let's discuss your project.</p>
+        </div>
+        <div class="last-txt" style="opacity:0;visibility:hidden">
+            <p>hey</p>
+        </div>
+        <!-- {{!-- ================================== --}} -->
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
