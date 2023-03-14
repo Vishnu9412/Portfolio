@@ -1,9 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "projects.scss"
-    ],
-    "names": [],
-    "file": "projects.css"
-}
+{"version":3,"sources":["projects.scss","projects.css"],"names":[],"mappings":"AAAA;EACE,UAAA;ACCF;;ADCA;EACE,UAAA;ACEF;;ADAA;EACE,sBAAA;ACGF;;ADDA;EACE,eAAA;EACA,kBAAA;ACIF;ADHE;EACE,cAAA;EACA,UAAA;EACA,SAAA;ACKJ;;ADFA;EACE,aAAA;EACA,uBAAA;EACA,eAAA;ACKF;ADJE;EACE,kBAAA;EACA,WAAA;EACA,YAAA;EACA,WAAA;ACMJ;ADLI;EACE,gBAAA;EACA,eAAA;EACA,kBAAA;ACON;ADLI;EACE,UAAA;EACA,yBAAA;ACON;ADLI;EACE,UAAA;ACON;;ADDA;EACI;IACI,sBAAA;ECIN;EDFE;IACI,8BAAA;ECIN;EDFE;IACI,kBAAA;ECIN;EDHM;IACI,mBAAA;ECKV;EDHM;IACI,gBAAA;ECKV;AACF","file":"projects.css"}

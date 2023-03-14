@@ -1,1 +1,63 @@
-/* No CSS *//*# sourceMappingURL=projects.css.map */
+body > div {
+  padding: 0;
+}
+
+header {
+  padding: 0;
+}
+
+body {
+  padding: 3em 5em 0 5em;
+}
+
+.project-header {
+  max-width: 40em;
+  margin-bottom: 6em;
+}
+.project-header h1 {
+  font-size: 4em;
+  padding: 0;
+  margin: 0;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projects .card {
+  position: relative;
+  margin: 2em;
+  height: auto;
+  width: 32em;
+}
+.projects .card img {
+  max-height: 20em;
+  max-width: 32em;
+  border-radius: 5px;
+}
+.projects .card:hover .desc {
+  opacity: 1;
+  bottom: calc(-50% + 15px);
+}
+.projects .card:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 747px) {
+  body {
+    padding: 3em 1em 0 1em;
+  }
+  .card {
+    margin: 1em 0 1em 0 !important;
+  }
+  .project-header {
+    margin-bottom: 3em;
+  }
+  .project-header .heading {
+    font-size: xx-large;
+  }
+  .project-header p {
+    font-size: small;
+  }
+}/*# sourceMappingURL=projects.css.map */
